@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+      xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+      entityID="https://idp.example.org/metadata">
+   <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:KeyDescriptor use="signing">
+         <ds:KeyInfo>
+            <ds:X509Data>
+               <ds:X509Certificate>
+MIIDFzCCAf+gAwIBAgIUQYuvheiyJVWlQ+QX5UZUTd90amQwDQYJKoZIhvcNAQEL
+BQAwGjEYMBYGA1UEAwwPaWRwLmV4YW1wbGUub3JnMCAXDTI2MTAxMzIwMDczNVoY
+DzIxMjYwOTE5MjAwNzM1WjAaMRgwFgYDVQQDDA9pZHAuZXhhbXBsZS5vcmcwggEi
+MA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC4GhnlQyLx/dUbShU4VvdoqZHY
+NKhdyIlDUXHvRTzNLoXa1+saPB2cubIqUBw35Grmh3V2duRH0OpT5ZOkOHs/n/JJ
+hcdUbW6wpVBJGeXWRHp7hzKtPZtKrIcfQHDuF5qPExszxw5yVJ8I71w1eFE97WVx
+m5v8atX0uTg5lbUQXvI0Kpx6w6Kqj2GJcKVFIDvEWDLSQEYxw11VJRaNGvKuZ5FI
+8stMzJMZ48Zmz634q/3rBUipxiwEO4cdGgDWlYDJuF+C3xDi+CPIZEPifYlIPqVk
+f/aQTvXL0eziUqtlrtuNS4c/qT/G7IiofhP693TAIlDjD0oe6K4yALt2npFjAgMB
+AAGjUzBRMB0GA1UdDgQWBBSBHo9+gsuSEs4JRuZZRnO7CYrNSzAfBgNVHSMEGDAW
+gBSBHo9+gsuSEs4JRuZZRnO7CYrNSzAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3
+DQEBCwUAA4IBAQARSYKPJ9Yh9j3Xw58Zdn7biM+vVGpaIVXS+FGtAYg1a/9OOOHz
+NPPMuxrcj1C2JhKADgs9pQBB3MuNlK4aoU+6Cf/lSGhqDwHMRLWc5V3DyOgMnl35
+VI6ZqjsBcWHslv9D7RnlZa1qT1TgqZCiF6YFJgD1+1dvIEp55Eze1jQD60IuMsAu
+RHl5wIVm0QFDGc+x1Z521WwQYDaxMVK+5hBfVoK6P5/5nIeJKPj0nDUH0fFizOPr
+UpsZ8dy9Y+wqvaygT/tJ6NIthumEwKkRPPYwOYRsPlVPFo7bO1DI1b7kpp0ZqSEM
+CWlpckL24CABaN3k1y4nRgeWC5rBEOkb5V4w
+               </ds:X509Certificate>
+            </ds:X509Data>
+         </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:SingleSignOnService Binding="urn:oasis:mace:shibboleth:1.0:profiles:AuthnRequest"
+            Location="https://idp.example.org/sso"/>
+   </md:IDPSSODescriptor>
+</md:EntityDescriptor>
